@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Table with Icons</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h2>Chemical Supplies</h2>
+
+            <div class="toolbar">
+                <button id="addRow" title="Add Row"><i class="fas fa-plus"></i></button>
+                <button id="moveUp" title="Move Row Up"><i class="fas fa-arrow-up"></i></button>
+                <button id="moveDown" title="Move Row Down"><i class="fas fa-arrow-down"></i></button>
+                <button id="deleteRow" title="Delete Row"><i class="fas fa-trash"></i></button>
+                <button id="refresh" title="Refresh"><i class="fas fa-sync"></i></button>
+                <button id="save" title="Save Data"><i class="fas fa-save"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <table id="chemicalTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)"></th>
+                <th onclick="sortTable(1)">Chemical Name</th>
+                <th onclick="sortTable(2)">Vendor</th>
+                <th onclick="sortTable(3)">Density
+                    <br>
+                    <br>
+                    <span class="unit">(g/m³)</span>
+                </th>
+                <th onclick="sortTable(4)">Viscosity
+                    <br>
+                    <br>
+                    <span class="unit">(m&sup2/s)</span>
+                </th>
+                <th onclick="sortTable(5)">Packaging</th>
+                <th onclick="sortTable(6)">Pack Size</th>
+                <th onclick="sortTable(7)">Unit</th>
+                <th onclick="sortTable(8)">Quantity</th>
+
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

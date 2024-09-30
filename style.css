@@ -1,0 +1,100 @@
+body {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button i {
+    color: #007bff;
+}
+
+button i:hover {
+    color: #0056b3;
+}
+
+#deleteRow i {
+    color: red;
+}
+
+#moveDown i {
+    color: grey;
+}
+
+#chemicalTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#chemicalTable th,
+#chemicalTable td {
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+#chemicalTable th {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: top;
+    /* Align headers to the top */
+}
+
+#chemicalTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+#chemicalTable tr.selected {
+    background-color: #7e8adb;
+}
+
+#chemicalTable td {
+    font-size: 13px;
+    color: #333;
+}
+
+.iconColumn {
+    text-align: center;
+    width: 100px;
+}
+
+.unit {
+    font-size: 12px;
+    color: grey;
+    font-weight: normal;
+}
